@@ -58,7 +58,7 @@ class FlashcardApp:
 
     def load_flashcards(self):
         try:
-            with open("cards.txt", "r") as file:
+            with open("D:\Visual Studio\Python\FLASHCARDAPP\cards.txt", "r") as file:
                 for line in file:
                     question, answer = line.strip().split(":")
                     self.flashcards.append((question, answer))
@@ -66,7 +66,7 @@ class FlashcardApp:
             pass
 
     def save_flashcards(self):
-        with open("cards.txt", "w") as file:
+        with open("D:\Visual Studio\Python\FLASHCARDAPP\cards.txt", "w") as file:
             for flashcard in self.flashcards:
                 file.write(f"{flashcard[0]}:{flashcard[1]}\n")
 
