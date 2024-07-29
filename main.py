@@ -21,7 +21,6 @@ class FlashcardApp:
         self.answer_entry.grid(row=1, column=0, padx=85, pady=5, sticky=W)
 
 
-
         self.add_button = Button(root, text="Add Flashcard", command=self.add_flashcard)
         self.add_button.grid(row=2, column=0, padx=80, pady=5, sticky=W)
 
@@ -33,8 +32,6 @@ class FlashcardApp:
 
         self.browse_button = Button(root, text="Browse Flashcards", command=self.browse_flashcards)
         self.browse_button.grid(row=3, column=0, padx=200, pady=5, sticky=W)
-
-
 
         # Load existing flashcards from file
         self.load_flashcards()
